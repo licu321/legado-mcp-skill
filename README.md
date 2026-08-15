@@ -32,6 +32,7 @@
 ```
 legado-mcp/
 ├── README.md                # 本文件：包总览与使用说明
+├── IMPORTS.md               # 从 GitHub 安装到各平台的导入指南
 ├── skill.md                 # 平台中立的主 Skill 文件（入口）
 ├── prompts/                 # 可复用提示词片段，按“能力”拆分
 │   ├── connect.md           # 连接、认证与启动探测
@@ -120,10 +121,13 @@ AI 在每次会话中自动执行 `prompts/connect.md` 的探测流程：询问/
 - **用完即关**：任务结束后建议提醒用户关闭 MCP 服务开关。
 - **隐私**：不要让用户把令牌、Cookie、完整书源正文粘贴到不受信任的外部服务。
 
-## 7. 平台接入
+## 7. 平台接入与导入
+
+**从 GitHub 安装本包请直接阅读 `IMPORTS.md`**（含 Claude / Copilot / Codex 三端的安装命令与 MCP 配置）。
 
 本包内容为**平台中立 Markdown**，同一套内容可在三个平台复用，具体接入方式见：
 
+- `IMPORTS.md` — 从 GitHub 克隆并安装到各平台的完整指引
 - `adapters/claude.md` — 以 `CLAUDE.md` / 技能目录（`~/.claude/skills/`）加载
 - `adapters/copilot.md` — 以 `.github/copilot-instructions.md` / `AGENTS.md` 或用户级 `prompts/` 加载
 - `adapters/codex.md` — 以 `AGENTS.md` / `~/.codex/` 加载
