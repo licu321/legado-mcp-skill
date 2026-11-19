@@ -135,7 +135,7 @@ AI 不得要求用户手动调用 HTTP/WebSocket 接口、手动阅读日志或�
 - 不要把令牌、Cookie、完整书源正文转发到不受信任的第三方服务。
 - 任务结束建议用户关闭 MCP 服务开关。
 
-## 7. 文件索引
+## 7. 文件索引，
 
 - `prompts/connect.md` — 连接与认证探测流程
 - `prompts/list_sources.md` / `prompts/get_source.md` — 书源查询
